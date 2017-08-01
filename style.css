@@ -1,7 +1,8 @@
 * {
     /*background-color: black;*/
     font-size:13px;
-    background-size: cover;
+    background-size: 100%;
+
 }
 
 .header {
@@ -66,7 +67,7 @@ button span {
     height: 54px;
     width: 404px;
     background-color: rgb(104,90,73);
-    opacity: 0.8;
+    opacity: 0.7;
     color: white;
 
     padding: 30px;
@@ -96,3 +97,40 @@ button span {
     position: relative;
     top:-30px;
 }
+
+
+.number {
+    color: white;
+}
+
+.movie {
+    margin: 0 auto;
+}
+.movie img{
+    width: 87px;
+    /*clip-path: polygon(5px 10px, 16px 3px, 16px 17px);*/
+    margin-right: 10px;
+
+}
+
+.name {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    width: 87px;
+    height: 34px;
+    text-align:center; /*水平居中*/
+    line-height: 34px; /*垂直居中*/
+    bottom: 60px;
+}
+
+.list{
+    width: 1050px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+
+
