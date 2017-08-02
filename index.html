@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Douban</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-    <script src="script.js"></script>
+    <script type="javascript" src="script.js"></script>
 </head>
 <body background="images/Unknown-3.jpeg">
+
 <div class="header">
     <ul class="left">
         <li><img src="images/Unknown-1.png"></li>
@@ -17,8 +18,10 @@
         <li><span>共8,510,680人访问</span></li>
     </ul>
     <ul class="right">
-        <li><img src="images/Unknown.gif"></li>
-        <li><span>播放背景音乐</span></li>
+        <span class="music"  >
+            <li><img src="images/Unknown.gif" name="musicImg" onmouseover="over()"></li>
+            <li><span name="musicWord">播放背景音乐</span></li>
+        </span>
         <li><button>
             <img class="table" src="images/table.png">
             <span>目录</span>
@@ -33,8 +36,12 @@
     </div>
     <div class="description">
         <p style="font-size: 20px">驴得水</p>
-        <p style="font-size: 10px">★★★★★ 8.3 278833人评价</p>
-        <p style="font-size: 10px">悲叹的是被压迫的是女性，欣慰的是觉醒的也是女性。<br/>—— bamboo</p>
+        <p style="font-size: 10px">
+            ★★★★<span class="grey">★<span/> 8.3 278833人评价
+        </p>
+        <p style="font-size: 10px">
+            <span class="grey">悲叹的是被压迫的是女性，欣慰的是觉醒的也是女性。<br/>—— bamboo<span/>
+        </p>
     </div>
 
     <div class="list">
