@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <title>Douban</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-    <script type="javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js">
+    </script>
 </head>
 <body background="images/Unknown-3.jpeg">
+<!--<script>-->
+    <!--var a = {name:"A"}-->
+    <!--var b = a;-->
+    <!--b.name = "B";-->
+    <!--if(a === b) {-->
+        <!--alert("=");-->
+    <!--} else {-->
+        <!--alert("!=")-->
+    <!--}-->
 
+<!--</script>-->
 <div class="header">
     <ul class="left">
         <li><img src="images/Unknown-1.png"></li>
@@ -17,12 +28,15 @@
         <li><span>分享给朋友</span></li>
         <li><span>共8,510,680人访问</span></li>
     </ul>
+
     <ul class="right">
         <span class="music"  >
-            <li><img src="images/Unknown.gif" name="musicImg" onmouseover="over()"></li>
-            <li><span name="musicWord">播放背景音乐</span></li>
+            <li><img src="images/Unknown.gif" id="musicImg" ></li>
+            <li ><span id="musicWord" onmouseover="over()" onmouseout="out()"  onclick="clicked()">
+                City of stars
+            </span></li>
         </span>
-        <li><button>
+        <li><button  onclick="clicked()">
             <img class="table" src="images/table.png">
             <span>目录</span>
         </button></li>
@@ -30,22 +44,22 @@
 </div>
 
 <div class="content">
-    <video src=""></video>
+    <!--<video src=""></video>-->
     <div class="title">
         <p style="font-size: 23px">2016评分最高的<br/>华语电影</p>
     </div>
     <div class="description">
         <p style="font-size: 20px">驴得水</p>
         <p style="font-size: 10px">
-            ★★★★<span class="grey">★<span/> 8.3 278833人评价
+            ★★★★<span class="grey">★</span> 8.3 278833人评价
         </p>
-        <p style="font-size: 10px">
-            <span class="grey">悲叹的是被压迫的是女性，欣慰的是觉醒的也是女性。<br/>—— bamboo<span/>
+        <p style="font-size: 10px" class="grey">
+            悲叹的是被压迫的是女性，欣慰的是觉醒的也是女性。<br/>—— bamboo
         </p>
     </div>
 
-    <div class="list">
-        <ul>
+    <!--<div class="list">-->
+        <ul class="list">
             <li>
                 <div class="number">
                     <p style="font-size: 20px">01</p>
@@ -165,7 +179,6 @@
 <div class="footer">
 
 </div>
-
 
 </body>
 </html>
