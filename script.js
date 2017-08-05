@@ -1,10 +1,12 @@
+// 解决冲突 http://bbs.csdn.net/topics/360098151
+
+
 function over() {
     console.log(document.getElementById("musicWord").innerHTML);
     if(document.getElementById("musicWord").innerHTML != "播放背景音乐") {
         document.getElementById("musicImg").src = "images/No.png";
         document.getElementById("musicWord").innerHTML = "关闭背景音乐";
     }
-
 }
 
 function out() {
@@ -23,4 +25,9 @@ function clicked() {
         document.getElementById("musicImg").src = "images/Unknown.gif";
         document.getElementById("musicWord").innerHTML = "City of stars";
     }
+
+    var music = document.getElementById("music");
+    music.play();
+    music.pause();
 }
+

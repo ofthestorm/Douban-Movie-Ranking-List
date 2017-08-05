@@ -1,10 +1,23 @@
 * {
     /*background-color: black;*/
+    margin: 0;
+    padding: 0;
     font-size:13px;
     background-size: cover;
-
+    background-repeat: no-repeat;
 
 }
+
+/*.cover {*/
+    /*background-size: cover;*/
+
+/*}*/
+/*.cover-landscape {*/
+    /*background-position: 43.71% 50.25%;*/
+/*}*/
+/*.cover-portrait {*/
+    /*background-position: 51.54% 50.25%;*/
+/*}*/
 
 .header {
     color: white;
@@ -23,12 +36,12 @@
     top: 2px;
 }
 
-ul {
-    overflow: hidden;
-    margin: 0 auto;
-    display: inline-block;
-    padding-left: 0
-}
+/*ul {*/
+    /*overflow: hidden;*/
+    /*margin: 0 auto;*/
+    /*display: inline-block;*/
+    /*padding-left: 0*/
+/*}*/
 ul li{
     padding: 3px 4px;
     text-align: center;
@@ -70,7 +83,6 @@ button span {
     background-color: rgba(104,90,73,0.7);
     /*opacity: 0.7;*/
     color: white;
-
     padding: 30px;
     position: fixed;
     top: 97px;
@@ -79,7 +91,6 @@ button span {
 
 .title p{
     position: relative;
-    top:-30px;
 }
 
 .description {
@@ -96,21 +107,28 @@ button span {
 
 .description p{
     position: relative;
-    top:-30px;
 }
 
 
 .number {
     color: white;
+    position: relative;
+    z-index: 2;
+    top: 25px;
+    left: -44px;
+    /*left: 10px;*/
 }
 
 .movie {
     margin: 0 auto;
+    position: relative;
+    top: 10px;
 }
 .movie img{
     width: 87px;
     clip-path: polygon(22px 0px, 87px 0px, 87px 122px, 0px 122px, 0px 22px);
     margin-right: 10px;
+
 
 }
 
@@ -122,20 +140,54 @@ button span {
     height: 34px;
     text-align:center; /*水平居中*/
     line-height: 34px; /*垂直居中*/
-    bottom: 60px;
-    /*position: absolute;*/
-    /*top: 0px;*/
+    position: absolute;
+    bottom: 9px;
+    z-index: 1;
 }
 
 .list{
-    width: 1050px;
+    width: 1100px;
+    padding-left: 50px;
     margin: 0 auto;
     position: fixed;
     bottom: 50px;
     left: 0;
     right: 0;
+
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.list li {
+    height: 200px;
 }
 
 .grey {
     color: grey;
+}
+
+.line {
+    z-index: 1;
+    position: fixed;
+    bottom: 100px;
+    /*border-top:1px solid #000;c*/
+    width: 40px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-color: white;
+    position: relative;
+    top: 50px;
+    left: -10px;;
+
+}
+
+.page2 {
+    width: 100%;
+    height: 180px;
+    background-color: white;
+}
+
+.sentence2 {
+
 }
