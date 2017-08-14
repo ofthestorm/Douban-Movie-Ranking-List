@@ -31,3 +31,9 @@ function clicked() {
     music.pause();
 }
 
+function insert(arr, item, index) {
+    var result = arr.slice(0,index-1);
+    result.push(item);
+    result.push(arr.slice(index+1,arr.length-1));
+    return result;
+}
